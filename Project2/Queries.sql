@@ -21,4 +21,4 @@ INNER JOIN PortfolioProject1..covidvaccination AS v
     AND d.[date] = v.[date]
     WHERE d.continent IS NOT NULL
 GROUP BY d.[location], population
-ORDER BY d.[location]
+ORDER BY 4 DESC

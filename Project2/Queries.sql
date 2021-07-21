@@ -38,3 +38,17 @@ FROM PortfolioProject1..coviddeath
 WHERE continent IS NOT NULL
 GROUP BY continent
 ORDER BY 1 
+
+
+--4
+-- Looking at the contamination curve in chronological order
+SELECT date, 
+    [location], 
+    new_cases,
+    new_deaths
+
+FROM PortfolioProject1..coviddeath
+
+WHERE continent IS NOT NULL
+
+ORDER BY [date]

@@ -30,8 +30,8 @@ SELECT continent,
     SUM(population) AS CONTINENT_POPULATION,
     SUM(new_cases) AS CASES,
     SUM(CAST(new_deaths as int)) AS DEATHS,
-    (SUM(new_cases)/SUM(population)) AS CONTAMINATION_RATE,
-    (SUM(CAST(new_deaths as int))/SUM(population)) AS DEATH_RATE
+    (SUM(new_cases)/SUM(population))*100 AS CONTAMINATION_RATE,
+    (SUM(CAST(new_deaths as int))/SUM(population))*100 AS DEATH_RATE
 
 FROM PortfolioProject1..coviddeath
 

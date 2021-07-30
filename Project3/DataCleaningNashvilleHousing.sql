@@ -363,12 +363,16 @@ WHERE
 
 
 
+-------------------------------------------------------------------------------------------
 -- DELETE Unused Columns
+-- All columns to precule.
 SELECT 
     * 
 FROM
     PortfolioProject1..NashvilleHousing
 
+
+-- Dropping Column
 ALTER TABLE
     PortfolioProject1..NashvilleHousing
 DROP COLUMN
@@ -376,6 +380,8 @@ DROP COLUMN
     SaleDate,
     OwnerAddress
 
+
+-- Checking again to ensure
 SELECT 
     * 
 FROM

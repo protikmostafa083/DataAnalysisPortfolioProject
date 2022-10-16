@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="height: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <title>Combined Graphs</title>   <!-- change as html file name -->
+    <style>
+      th{
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body style="height: 100%;">
+
+    <table width=100% style="height: 100%; align: center;">
+      <tr>
+        <th>Average Garbage</th>       <!-- change title of first map -->
+        <th>Average Garbage/Unit</th>       <!-- change title of second map -->
+        <th>Average Recycle</th>       <!-- change title of third map -->
+        <th>Average Recycle/Unit</th>       <!-- change title of fourth map -->
+      </tr>
+      <tr>
+        <td width=25%><iframe src="garbage_street_rank.html" width=100% height=100%></iframe></td>       <!-- change src="XX" as first map's html name -->
+        <td width=25%><iframe src="garbage_unit_rank.html" width=100% height=100%></iframe></td>       <!-- change src="XX" as second map's html name -->
+        <td width=25%><iframe src="recycle_street_rank.html" width=100% height=100%></iframe></td>       <!-- change src="XX" as third map's html name -->
+        <td width=25%><iframe src="recycle_unit_rank.html" width=100% height=100%></iframe></td>       <!-- change src="XX" as fourth map's html name -->
+      </tr>
+    </table>
+  </body>
+</html>
